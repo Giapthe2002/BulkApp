@@ -2,6 +2,7 @@
 .header {
     background-image: url(../Image/xhome-banner.jpg);
     height: 900px;
+    margin-bottom: 70px;
 }
 .header__nav {
     min-height: 100px;
@@ -24,10 +25,12 @@
 
 }
 
+
 .intro-list {
     margin: auto;
     line-height: normal;
 }
+
 .intro-list h2 {
     color: #ffff;
     font-weight: 700;
@@ -42,6 +45,7 @@
     text-align: justify;
     line-height: 2.6rem;
     padding-bottom: 40px;
+    max-width: 460px;
 }
 .intro-img {
     padding: 60px 0 0 0;
@@ -71,16 +75,24 @@
     font-weight: 400;
     line-height: normal;
 }
-.content .text-description {
+.text-description p {
     text-align: center;
     color: #777777;
     padding-top: 15px;
     font-size: 1.4rem;
     line-height: 1.6;
+    max-width: 600px;
+
+}
+.text-description {
+    display: flex;
+    justify-content: center;
 }
 .content .text-maintenance {
     margin: 75px 15px 0 15px;
     padding: 50px 30px;
+    box-shadow: 5px 20px 40px 5px #eeeeee;
+    border-radius: 5px;
 }
 .text-maintenance:first-child {
     margin-left: 0;
@@ -110,12 +122,14 @@
     color: #222222;
     font-size: 4rem;
     font-weight: 400;
+    max-width: 500px;
 }
 .content-description-text p {
     color: #777777;
     font-size: 1.4rem;
     padding: 30px 0 40px 0;
     line-height: 1.6;
+    max-width: 480px;
 }
 .content-description-text button {
     border: none;
@@ -171,7 +185,6 @@
     color: #222222;
     font-size: 3.6rem;
     font-weight: 400;
-    margin-bottom: 15px;
     line-height: normal;
 }
 .content-pricing-table .content-pricing-table-p {
@@ -214,15 +227,19 @@
     font-size: 2.4rem;
     color: #222222;
 }
+
 .pricing-table-text .pricing-table-p {
     color: #777777;
     font-size: 1.4rem;
     text-align: center;
     line-height: 2;
     padding-top: 30px;
+    max-width: 200px;
+    margin: auto;
 }
 .pricing-table-text .pricing-table-button {
-    margin-left: 90px;
+    display: flex;
+    justify-content: center;
 }
 .pricing-table-text .pricing-table-button button {
     border: solid 1px #dddddd;
@@ -245,21 +262,7 @@
 .content-screenshots .content-screenshots-heading {
     margin-top: 120px;
 }
-/* .content-screenshots .content-screenshots-heading h2 {
-    color: #222222;
-    text-align: center;
-    color: #222222;
-    font-size: 3.6rem;
-    font-weight: 400;
-    margin-bottom: 15px;
-    line-height: normal;
-} */
-/* .content-screenshots .content-screenshots-heading p {
-    text-align: center;
-    color: #777777;
-    font-size: 1.4rem;
-    line-height: 1.7;
-} */
+
 .content-screenshots-img img {
     margin: 75px 12px 120px 12px;
 }
@@ -303,6 +306,7 @@
     padding-bottom: 20px;
     font-size: 1.4rem;
     line-height: 1.6;
+    max-width: 380px;
 }
 .content-testi-paragraph h4 {
     color: #222222;
@@ -329,44 +333,10 @@
     margin-top: 40px;
 }
 
-/* .download-btn button{
-    border: solid 1px #F9F9FF;
-    background: #777777;
-    border-radius: 5px;
-    padding: 12px 30px;
-}
-.download-btn:first-child {
-    margin-right: 10px;
-}
-.download-btn:last-child {
-    margin-left: 10px;
-}
-.content-btn-inform {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.content-btn-inform i {
-    font-size: 4rem;
+.content-dowmnload .content-dowmnload-paragraph p {
     color: #ffff;
-    padding-right: 20px;
+    max-width: 800px;
 }
-.btn-infor .btn-infor-heading {
-    font-size: 2.2rem;
-    font-weight: 500;
-    letter-spacing: 0.1rem;
-    color: #eeeeee;
-}
-.btn-infor .btn-infor-p {
-    font-size: 1.4rem;
-    color: #eeeeee;
-    padding-top: 2px;
-    margin-left: -15px;
-}
-.download-btn-apple button {
-    float: right;
-} */
-
 .button-download {
     display: flex;
     justify-content: space-between;
@@ -529,6 +499,12 @@
     font-weight: 500;
     margin-bottom: 28px;
 }
+.footer-heading-feed {
+    margin-left: 52px;
+}
+.footer-feed img {
+    float: right;
+}
 .footer-feed h6 {
     margin-bottom: 8px;
 }
@@ -549,6 +525,7 @@
     border-radius: 20px;
     padding: 12px 30px;
 }
+
 .footer-btn:hover {
     cursor: pointer;
 }

@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./Assets/Fonts/fontawesome-free-6.1.0-web/css/all.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@100;300;400;500;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Roboto:wght@100;300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
     <div class="main">
@@ -21,6 +23,11 @@
             <div class="header__nav">
                 <div class="header__logo">
                     <img src="./Assets/Image/logo_bulkapp.jpg" alt="logo_bulkApp">
+                    <label  class="icon-mobile-nav">
+                        <label for="nav-mobile-input" class="material-symbols-outlined">
+                            menu
+                        </label>
+                    </label> 
                 </div>
                 <div class="header__nav-list">
                     <ul class="header__nav-item">
@@ -34,13 +41,34 @@
                         <li><a href="">CONTACT</a></li>
                     </ul>
                 </div>
+
+                <div class="overlay"></div>
+                <!-- icon mobile nav-->
+                <label class="menu-mobile-close">
+                    <label for="nav-mobile-input" class="material-symbols-outlined">
+                        close
+                    </label>
+                </label>
+                <input type="checkbox" hidden name="" class="check-input" id="nav-mobile-input">             
+                <div class="menu-mobile">
+                    <ul class="menu-list">
+                        <li><a href="" class="menu-list-link">HOME</a></li>
+                        <li><a href="" class="menu-list-link">FEATURES</a></li>
+                        <li><a href="" class="menu-list-link">VIDEO</a></li>
+                        <li><a href="" class="menu-list-link">PRICING</a></li>
+                        <li><a href="" class="menu-list-link">SCREENS</a></li>
+                        <li><a href="" class="menu-list-link">PAGES</a></li>
+                        <li><a href="" class="menu-list-link">BLOG</a></li>
+                        <li><a href="" class="menu-list-link">CONTACT</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="header__intro">
-                <div class="grid wide">
-                    <div class="row">
-                        <div class="intro-list grid__column-2">
-                            <h2>The Best App  <br> in the Universe</h2>
-                            <p>inappropriate behavior is often laughed off as “boys will be boys,” women <br> face higher conduct standards especially in the workplace. That’s why it’s <br> crucial that, as women.</p>
+                <div class="grid">
+                    <div class="row ">
+                        <div class="intro-list grid__column-2 grid__column-2-res ">
+                            <h2>The Best App in the Universe</h2>
+                            <p class="intro-list-sub">inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women.</p>
                             <button class="intro-list-btn">Explore Now</button>
                         </div>
                         <div class="intro-img grid__column-2">
@@ -52,29 +80,31 @@
         </div>
 
         <div class="content">
-            <h2 class="text-heading">Unique Features</h2>
-            <p class="text-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <br> ut labore et dolore magna aliqua.</p>
+            <h2 class="heading">Unique Features</h2>
+            <span class=" text-description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </span>
             <div class="grid">
-                <div class="content-maintenance row ">
-                    <div class="text-maintenance grid__column-4">
+                <div class="content-maintenance row">
+                    <div class="text-maintenance grid__column-4 grid__column-4-res">
                         <img src="./Assets/Image/picture_logo.jpg" alt="">
                         <h4>Maintenance</h4>
-                        <p>inappropriate behavior is often <br> laughed off as boys will be <br> boys,” women face higher <br> conduct standards especially in <br> the workplace. That’s why.</p>
+                        <p>inappropriate behavior is often laughed off as boys will be boys,” women face higher conduct standards especially in the workplace. That’s why.</p>
                     </div>
-                    <div class="text-maintenance grid__column-4">
+                    <div class="text-maintenance grid__column-4 grid__column-4-res">
                         <img src="./Assets/Image/picture_logo.jpg" alt="">
                         <h4>Maintenance</h4>
-                        <p>inappropriate behavior is often <br> laughed off as boys will be <br> boys,” women face higher <br> conduct standards especially in <br> the workplace. That’s why.</p>
+                        <p>inappropriate behavior is often laughed off as boys will be boys,” women face higher conduct standards especially in the workplace. That’s why.</p>
                     </div>
-                    <div class="text-maintenance grid__column-4">
+                    <div class="text-maintenance grid__column-4 grid__column-4-res">
                         <img src="./Assets/Image/picture_logo.jpg" alt="">
                         <h4>Maintenance</h4>
-                        <p>inappropriate behavior is often <br> laughed off as boys will be <br> boys,” women face higher <br> conduct standards especially in <br> the workplace. That’s why.</p>
+                        <p>inappropriate behavior is often laughed off as boys will be boys,” women face higher conduct standards especially in the workplace. That’s why.</p>
                     </div>
-                    <div class="text-maintenance grid__column-4">
+                    <div class="text-maintenance grid__column-4 grid__column-4-res">
                         <img src="./Assets/Image/picture_logo.jpg" alt="">
                         <h4>Maintenance</h4>
-                        <p>inappropriate behavior is often <br> laughed off as boys will be <br> boys,” women face higher <br> conduct standards especially in <br> the workplace. That’s why.</p>
+                        <p>inappropriate behavior is often laughed off as boys will be boys,” women face higher conduct standards especially in the workplace. That’s why.</p>
                     </div>
                 </div>
             </div>
@@ -82,12 +112,12 @@
             <div class="content-description-1">
                 <div class="grid">
                     <div class="row">
-                        <div class="content-description-img grid__column-2">
+                        <div class="content-description-img grid__column-2 grid__column-2-res">
                             <img src="./Assets/Image/xinterior-1.png" alt="">
                         </div>
-                        <div class="content-description-text grid__column-2">
-                            <h4>We Believe that Interior <br> beautifies the Total <br> Architecture</h4>
-                            <p>inappropriate behavior is often laughed off as “boys will be boys,” women <br> face higher conduct standards especially in the workplace. That’s why it’s <br> crucial that, as women, our behavior on the job is beyond reproach. <br> inappropriate behavior is often laughed off.</p>
+                        <div class="content-description-text grid__column-2 grid__column-2-res">
+                            <h4>We Believe that Interior beautifies the Total Architecture</h4>
+                            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed off.</p>
                             <button>See Details</button>
                         </div>
                         
@@ -98,35 +128,37 @@
             <div class="content-description-2">
                 <div class="grid">
                     <div class="row">
-                        <div class="content-description-text grid__column-2">
-                            <h4>We Believe that Interior <br> beautifies the Total <br> Architecture</h4>
-                            <p>inappropriate behavior is often laughed off as “boys will be boys,” women <br> face higher conduct standards especially in the workplace. That’s why it’s <br> crucial that, as women, our behavior on the job is beyond reproach. <br> inappropriate behavior is often laughed off.</p>
+                        <div class="content-description-text grid__column-2 grid__column-2-res">
+                            <h4>We Believe that Interior beautifies the Total Architecture</h4>
+                            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed off.</p>
                             <button>See Details</button>
                         </div>
-                        <div class="content-description-img grid__column-2">
+                        <div class="content-description-img grid__column-2 grid__column-2-res">
                             <img src="./Assets/Image/xinterior-2.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- <div class="content-xvideo">
+            <div class="content-xvideo">
                 <div class="grid">
-                    <div class="video row">
-                        <img src="./Assets/Image/xvideo-1.png" alt="">
+                    <div class="row video">
+                        <img class="video-img" src="./Assets/Image/xvideo-1.png" alt="">
                         <a class="content-play-video" href="">
                             <img src="./Assets/Image/play.png" alt="">
                         </a>
                     </div>
                 </div>
-            </div> -->
+            </div>
 
             <div class="content-pricing-table">
-                <h2 class="content-pricing-table-heading">Pricing Table</h2>
-                <p class="content-pricing-table-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <br> ut labore et dolore magna aliqua.</p>
+                <h2 class="heading">Pricing Table</h2>
+                <span class=" text-description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </span>
                 <div class="grid">
                     <div class="row">
-                        <div class="pricing-table-text grid__column-3">
+                        <div class="pricing-table-text grid__column-3 grid__column-3-res">
                             <div class="text-column">
                                 <div class="text-column-heading">
                                     <h3>Standard</h3>
@@ -137,17 +169,18 @@
                                 </div>
                             </div>
                             <div class="pricing-table-p">
-                                <p>2.5 GB Free Photos <br>
-                                    Secure Online Transfer Indeed <br>
-                                    Unlimited Styles for interface <br>
-                                    Reliable Customer Service <br>
-                                    Manual Backup Provided</p>
+                                <p>2.5 GB Free Photos
+                                    Secure Online Transfer Indeed
+                                    Unlimited Styles for interface
+                                    Reliable Customer Service
+                                    Manual Backup Provided
+                                </p>
                             </div>
                             <div class="pricing-table-button">
                                 <button>Purchase Plan</button>
                             </div>
                         </div>
-                        <div class="pricing-table-text grid__column-3">
+                        <div class="pricing-table-text grid__column-3 grid__column-3-res">
                             <div class="text-column">
                                 <div class="text-column-heading">
                                     <h3>Standard</h3>
@@ -158,17 +191,18 @@
                                 </div>
                             </div>
                             <div class="pricing-table-p">
-                                <p>2.5GB Free Photos <br>
-                                    Secure Online Transfer Indeed <br>
-                                    Unlimited Styles for interface <br>
-                                    Reliable Customer Service <br>
-                                    Manual Backup Provided</p>
+                                <p>2.5 GB Free Photos
+                                    Secure Online Transfer Indeed
+                                    Unlimited Styles for interface
+                                    Reliable Customer Service
+                                    Manual Backup Provided
+                                </p>
                             </div>
                             <div class="pricing-table-button">
                                 <button>Purchase Plan</button>
                             </div>
                         </div>
-                        <div class="pricing-table-text grid__column-3">
+                        <div class="pricing-table-text grid__column-3 grid__column-3-res">
                             <div class="text-column">
                                 <div class="text-column-heading">
                                     <h3>Standard</h3>
@@ -179,11 +213,12 @@
                                 </div>
                             </div>
                             <div class="pricing-table-p">
-                                <p>2.5GB Free Photos <br>
-                                    Secure Online Transfer Indeed <br>
-                                    Unlimited Styles for interface <br>
-                                    Reliable Customer Service <br>
-                                    Manual Backup Provided</p>
+                                <p>2.5 GB Free Photos
+                                    Secure Online Transfer Indeed
+                                    Unlimited Styles for interface
+                                    Reliable Customer Service
+                                    Manual Backup Provided
+                                </p>
                             </div>
                             <div class="pricing-table-button">
                                 <button>Purchase Plan</button>
@@ -194,9 +229,11 @@
             </div>
 
             <div class="content-screenshots">
-                <div class="content-screenshots-heading">
+                <div class="heading">
                     <h2 class="heading">Unique Screenshots</h2>
-                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <br> ut labore et dolore magna aliqua.</p>
+                    <span class=" text-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </span>
                 </div>
                 <div class="content-screenshots-img grid">
                     <img class="image-1" src="./Assets/Image/xfeature-1.jpg" alt="">
@@ -207,29 +244,31 @@
             </div>
 
             <div class="content-testi">
-                <div class="content-testi-heading">
+                <div class="heading">
                     <h2 class="heading">Testimonials</h2>
-                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <br> ut labore et dolore magna aliqua.</p>
+                    <span class=" text-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </span>
                 </div>
 
                 <div class="grid">
                     <div class="row">
-                        <div class="content-testi-list content-testi-list-1 grid__column-2-1">
+                        <div class="content-testi-list content-testi-list-1 grid__column-2-1 grid__column-3-res">
                             <div class="content-testi-img">
                                 <img src="./Assets/Image/xtesti-2.png" alt="">
                             </div>
                             <div class="content-testi-paragraph">
-                                <p>Accesssories Here you can find the best computer <br> acssessory for your laptop, monitor, printer, scanner, speaker, <br> projector, hardware.</p>
+                                <p>Accesssories Here you can find the best computer acssessory for your laptop, monitor, printer, scanner, speaker, projector, hardware.</p>
                                 <h4>Mark Alviro Wiens</h4>
                                 <h5>CEO at Google</h5>
                             </div>
                         </div>
-                        <div class="content-testi-list content-testi-list-2 grid__column-2-1">
+                        <div class="content-testi-list content-testi-list-2 grid__column-2-1 grid__column-3-res">
                             <div class="content-testi-img">
                                 <img src="./Assets/Image/xtesti-1.png" alt="">
                             </div>
                             <div class="content-testi-paragraph">
-                                <p>Accesssories Here you can find the best computer <br> acssessory for your laptop, monitor, printer, scanner, speaker, <br> projector, hardware.</p>
+                                <p>Accesssories Here you can find the best computer acssessory for your laptop, monitor, printer, scanner, speaker, projector, hardware.</p>
                                 <h4>Mark Alviro Wiens</h4>
                                 <h5>CEO at Google</h5>
                             </div>
@@ -240,11 +279,13 @@
 
             <div class="content-dowmnload">
                 <h2 class="heading">Download This App Today!</h2>
-                <p class="paragraph">It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been <br> achieving great heights so far as its popularity and technological advancement are concerned.</p>
+                <span class="text-description content-dowmnload-paragraph">
+                    <p>It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been achieving great heights so far as its popularity and technological advancement are concerned.</p>
+                </span>
                 <div class="content-download-btn">
                     <div class="grid">
                         <div class="row">
-                            <div class="download-btn grid__column-2-2">
+                            <div class="download-btn grid__column-2-2 grid__column-2-download">
                                 <div class="button-download button-download-apple">
                                     <div class="content-btn-inform">
                                         <i class="btn-icon fa-brands fa-apple"></i></i>
@@ -255,7 +296,7 @@
                                     </div>
                                 </div>                            
                             </div>
-                            <div class="download-btn grid__column-2-2">
+                            <div class="download-btn grid__column-2-2 grid__column-2-download">
                                 <div class="button-download button-download-android">
                                     <div class="content-btn-inform">
                                         <i class="btn-icon fa-brands fa-apple"></i></i>
@@ -275,16 +316,18 @@
             </div>
             <div class="content-news">
                     <h2 class="heading">Latest News</h2>
-                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <br> ut labore et dolore magna aliqua.</p>
+                    <span class=" text-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </span>
                     <div class="content-news-inform">
                         <div class="grid">
                             <div class="row">
-                                <div class="content-news-list content-news-list-1 grid__column-3">
+                                <div class="content-news-list content-news-list-1 grid__column-3 grid__column-3-res">
                                     <div class="content-news-date content-news-date-1">
                                         <p>10 April, 2018</p>                                  
                                     </div>
-                                    <h4 class="content-news-list-heading-1">BEJAMIN FRANKLIN METHOD <br> OF HABIT FORMATION</h4>
-                                    <p class="content-news-list-p">There are many kinds of narratives and <br> organizing principles. Science is driven by <br> evidence gathered in experiments, and by the <br> falsification of extant theories and their</p>
+                                    <h4 class="content-news-list-heading-1">BEJAMIN FRANKLIN METHOD OF HABIT FORMATION</h4>
+                                    <p class="content-news-list-p">There are many kinds of narratives and organizing principles. Science is driven by evidence gathered in experiments, and by the falsification of extant theories and their</p>
                                     <div class="content-news-icon">
                                         <i class="news-icon-item news-icon-views fa-solid fa-eye">
                                             <p>4.5k Views</p>
@@ -297,12 +340,12 @@
                                         </i>
                                     </div>
                                 </div>
-                                <div class="content-news-list content-news-list-2 grid__column-3">
+                                <div class="content-news-list content-news-list-2 grid__column-3 grid__column-3-res">
                                     <div class="content-news-date content-news-date-2">
                                         <p>10 April, 2018</p>                                  
                                     </div>
-                                    <h4 class="content-news-list-heading-2">BEJAMIN FRANKLIN METHOD <br> OF HABIT FORMATION</h4>
-                                    <p class="content-news-list-p">There are many kinds of narratives and <br> organizing principles. Science is driven by <br> evidence gathered in experiments, and by the <br> falsification of extant theories and their</p>
+                                    <h4 class="content-news-list-heading-2">BEJAMIN FRANKLIN METHOD OF HABIT FORMATION</h4>
+                                    <p class="content-news-list-p">There are many kinds of narratives and organizing principles. Science is driven by evidence gathered in experiments, and by the falsification of extant theories and their</p>
                                     <div class="content-news-icon">
                                         <i class="news-icon-item news-icon-views fa-solid fa-eye">
                                             <p>4.5k Views</p>
@@ -315,7 +358,7 @@
                                         </i>
                                     </div>
                                 </div>
-                                <div class="content-news-list content-news-list-3 grid__column-3">
+                                <div class="content-news-list content-news-list-3 grid__column-3 grid__column-3-res">
                                     <div class="content-news-date content-news-date-3">
                                         <p>10 April, 2018</p>                                  
                                     </div>
@@ -341,8 +384,8 @@
         <div class="footer">
             <div class="grid">
                 <div class="row">
-                    <div class="footer-product grid__column-4-1">
-                        <h6 class="footer-heading">TOP PRODUCTS</h6>
+                    <div class="footer-product grid__column-4-1 grid__column-3-footer">
+                        <h6 class="footer-heading ">TOP PRODUCTS</h6>
                         <ul>
                             <li>Managed Websites</li>
                             <li>Manage Reputation</li>
@@ -350,14 +393,14 @@
                             <li>Marketing Service</li>
                         </ul>
                     </div>
-                    <div class="footer-newsletter grid__column-2">
+                    <div class="footer-newsletter grid__column-2 grid__column-3-footer">
                         <h6 class="footer-heading">NEWSLETTER</h4>
                         <p>You can trust us. we only send promo offers, not a single spam.</p>
                         <input class="footer-input" type="email" placeholder="Your email address" >
                         <button class="footer-btn">Get Started</button>
                     </div>
-                    <div class="footer-feed grid__column-4-1">
-                        <h6 class="footer-heading">INSTAGRAM FEED</h6>
+                    <div class="footer-feed grid__column-4-1 grid__column-3-footer">
+                        <h6 class="footer-heading footer-heading-feed ">INSTAGRAM FEED</h6>
                         <div class="feed-img">
                             <img src="./Assets/Image/footer_1.jpg" alt="">
                             <img src="./Assets/Image/footer_2.jpg" alt="">
@@ -375,10 +418,10 @@
             <div class="footer-address">
                 <div class="grid">
                     <div class="row">
-                        <div class="footer-address-heading grid__column-2">
+                        <div class="footer-address-heading grid__column-2 grid__column-2-res">
                             <p>Copyright ©2022 All rights reserved This template is made with  by Colorlib</p>
                         </div>
-                        <div class="footer-address-icon grid__column-2">
+                        <div class="footer-address-icon grid__column-2 grid__column-2-res">
                             <i class="address-icon-fb fa-brands fa-facebook-f"></i>
                             <i class="address-icon-twitter fa-brands fa-twitter"></i>
                             <i class="address-icon-behance fa-brands fa-behance"></i>
